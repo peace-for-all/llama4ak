@@ -29,3 +29,24 @@ If you want to see all output, remove 2>error.log, just run `python3 main.py`.
 ## Notes
 
 - `llama_cpp_python` library used here supports pulling models [from HuggingFace directly - link to howto](https://github.com/abetlen/llama-cpp-python?tab=readme-ov-file#pulling-models-from-hugging-face-hub). This allows experiments with other models.
+
+
+# RAG script
+
+## Setup
+
+```bash
+python3 -m venv venv # creates venv directory
+source venv/bin/activate # enters virtual environment
+pip install -r requirements.txt
+```
++ put into data_rag_ru some PDFs to get data for answers from.
+
+## Run
+
+```bash
+python3 rag_from_pdf.py
+```
+then ask your questions from it.
+
+Cheers.
