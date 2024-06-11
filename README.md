@@ -35,12 +35,15 @@ If you want to see all output, remove 2>error.log, just run `python3 main.py`.
 
 ## Setup
 
+### Script env
 ```bash
 python3 -m venv venv # creates venv directory
 source venv/bin/activate # enters virtual environment
 pip install -r requirements.txt
 ```
-+ put into data_rag_ru some PDFs to get data for answers from.
+### Data for RAG
+1. Create directory `data_rag_ru` in this project;
+2. Put there PDF files to get the answers data from.
 
 ## Run
 
