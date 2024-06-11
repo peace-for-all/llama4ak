@@ -15,11 +15,7 @@ pip install llama-cpp-python \
 
 ### Put a model into models/ dir
 
-- I've tested with [llama-2-13b.Q5_K_M.gguf](https://huggingface.co/TheBloke/Llama-2-13B-GGUF/resolve/main/llama-2-13b.Q5_K_M.gguf?download=true) (warning! 9Gb on local disk!)
-- `llama_cpp_python` author suggests pulling [from HuggingFace directly - link to howto](https://github.com/abetlen/llama-cpp-python?tab=readme-ov-file#pulling-models-from-hugging-face-hub).
-
-### Edit main.py
-Model path: has to have your model file name.
+- Download 8.6G file of model -> [llama-2-13b.Q5_K_M.gguf](https://huggingface.co/TheBloke/Llama-2-13B-GGUF/resolve/main/llama-2-13b.Q5_K_M.gguf?download=true), place in models/ dir.
 
 ### Run main.py
 
@@ -28,3 +24,8 @@ python3 main.py 2>error.log
 ```
 NOTE: by default the model writes a lot of information out into STDERR. I filter that out with 2>error.log for you to see later.
 If you want to see all output, remove 2>error.log, just run `python3 main.py`.
+
+
+## Notes
+
+- `llama_cpp_python` library used here supports pulling models [from HuggingFace directly - link to howto](https://github.com/abetlen/llama-cpp-python?tab=readme-ov-file#pulling-models-from-hugging-face-hub). This allows experiments with other models.
